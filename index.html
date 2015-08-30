@@ -47,18 +47,49 @@
             <header>
                 <h2>d2dとは</h2>
             </header>
+            <p>ウェブのテクニカルな内容とデザイン的な内容を横断した、<br />特定のプロダクトや技術に限定しない勉強会。</p>
+            <p>D2Dとは、Dev & Design Draftの略。<br />"Draft"とは、草案、下書き状態の情報やアイディアを交換するところ。</p>
+            <p>特定の技術やプロダクトに限定せずに、Web制作者が今一番気になる情報を知ろうという領域横断型の勉強会シリーズ。関西エリアで開催している「語るより実際にやってみよう！」な勉強会。</p>
         </section>
         <section id="contact">
             <header>
                 <h2>お問い合わせ</h2>
             </header>
+            <p>D2Dへのお問合せは以下の各項目へ、入力・選択してください。<br />必須の付いている項目は必ずご記入ください。</p>
+            <form method="post" action="#">
+                <div>
+                    <label for="name">お名前<span>必須</span></label>
+                    <input type="text" id="name" aria-required="true" name="#">
+                </div>
+                <div>
+                    <label for="mail">メールアドレス<span>必須</span></label>
+                    <input type="text" aria-required="true" id="mail" name="#">
+                </div>
+                <div>
+                    <label for="address">ご住所</label>
+                    <input type="text" id="address" name="#">
+                </div>
+                <div>
+                    <label for="call_number">電話番号</label>
+                    <input type="tel" id="call_number" name="#">
+                </div>
+                <div>
+                    <p id="contact_type">お問合せの種類</p>
+                    <div class="radio_bt" role="radiogroup"><label for="about_a"><input type="radio" id="about_a" aria-describedby="contact_type" name="#">Aについて</label><label for="about_b"><input type="radio" id="about_b" aria-describedby="contact_type" name="#">Bについて</label><label for="about_c"><input type="radio" id="about_c" aria-describedby="contact_type" name="#">Cについて</label></div>
+                </div>
+                <div>
+                    <label for="inquiry_content">お問合せ内容<span>必須</span></label>
+                    <textarea rows="6" cols="35" name="#" id="inquiry_content" aria-required="true"></textarea>
+                </div>
+                <input type="submit" value="確認画面へ">
+            </form>
         </section>
         <aside>
-            facebook
-            twitter
+            <p><a href="https://www.facebook.com/groups/192199647655920/"><img src="assets/img/icon_facebook_f.png" alt="Facebookへのリンク" /></a></p>
+            <p><a href="http://twitter.com/search?q=%23d2draft&src=typd&lang=ja"><img src="assets/img/icon_facebook_f.png" alt="twitterへのリンク" /></a></p>
         </aside>
         <footer>
-            <p>d2draft</p>
+            <p>&copy; D2DRAFT. All Rights Reserved.</p>
         </footer>
     </body>
 </html>
